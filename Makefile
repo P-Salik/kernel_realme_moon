@@ -442,13 +442,6 @@ COMPILE_PLATFORM=oppo6769
 OPPO_COMPILE_PLATFORM=oppo6769
 OPPO_F2FS_DEBUG := false
 
-#ifdef VENDOR_EDIT
-#LiYue@BSP.CHG.Basic, 2019/09/12, add for 806 high/low temp aging
-ifeq ($(OPPO_HIGH_TEMP_VERSION),true)
-KBUILD_CFLAGS += -DCONFIG_HIGH_TEMP_VERSION
-endif
-#endif /* VENDOR_EDIT */
-
 #ifdef  VENDOR_EDIT
 #LiPing-m@PSW.MM.Display.LCD.Machine, 2017/11/03, Add for VENDOR_EDIT macro in kernel
 KBUILD_CFLAGS +=   -DVENDOR_EDIT
